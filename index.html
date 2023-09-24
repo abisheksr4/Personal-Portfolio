@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1000, user-scalable=0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal portfolio</title>
+</head>
+<body>
+                                    <!--navbar-->
+    <nav>
+    <h1>ABISHEK BABU</h1>
+    <ul class="navigation">
+        <li><a href="#about" class="navlinks">About</a></li>
+        <li><a href="#skills" class="navlinks">Skills</a></li>
+        <li><a href="#project" class="navlinks">Projects</a></li>
+        <li><a href="#contact" class="navlinks">Contact me</a></li>
+        </ul>
+        <button class="burgermenu" id="burgermenu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/> </svg>
+            </button>
+        </nav>
+                                    <!--hero section-->    
+    <section class="hero" id="about">
+        <img src="wd.jpg" alt="ABISHEK BABU" loading="lazy" class="heroimg"
+        />
+        <div class="biomain">
+            <h2 class="biotitle">About me</h2>
+            <p class="biotext">
+           Hi everyone,im Abishek Babu and this is my personal portfolio website.currently im pursuing my
+           BE ECE at kamaraj College of Engineering and Technology which is located near virudhunagar.</br>I did my schooling at Anusha vidyalaya matriculation school and Indira gandhi memorial matriculation higher secondary school.</br>im ready to obtain a challenging career in the IT industry and ready to put all my efforts into the growth of the organization and to have 
+           a great working environment.currently im learning MERN stack development.</p>
+        </div>
+    </section>
+                                    <!--skills section-->
+     <section class="skills" id="skills">
+        <h2 class="skillheader">My Skills</h2>
+        <div class="skillswrapper">
+            <div class="imgclass">
+                <img src="mern.jpg" alt="" loading="lazy" class="imgcard"/>
+            </div>
+        </section>
+                                    <!--project section-->
+        <section class="projects" id="project">
+            <h2 class="projectstitle">Some of my Projects</h2>
+            <div class="projectcontainer">
+                <div class="projectcard">
+                    <img src="tic.png" alt="Tic Tac Toe Game" loading="lazy"class="projectpic">
+                    <h3 class="projecttitle">Tic Tac Toe Game</h3>
+                    <p class="projectdetails">Click below  to see the project now.</p>
+                    <a href="#" target="_blank" class="project-link">Check it Out</a>
+                </div>
+                <div class="projectcontainer">
+                <div class="projectcard">
+                    <img src="netflixclone.png" alt="Netflixclone" loading="lazy"class="projectpic">
+                    <h3 class="projecttitle">Netflix clone</h3>
+                    <p class="projectdetails">Click below to see the project now.</p>
+                    <a href="#" target="_blank" class="project-link">Check it Out</a>
+                </div>
+                <div class="projectcontainer">
+                    <div class="projectcard">
+                        <img src="weather app.png" alt="Weatherapp" loading="lazy"class="projectpic">
+                        <h3 class="projecttitle">Weather app</h3>
+                        <p class="projectdetails">Click below to see the project now.</p>
+                        <a href="#" target="_blank" class="project-link">Check it Out</a>
+                    </div>
+                </div>            <!--this div tag belongs to line47-->
+                </section>
+                                        <!--contact section-->                                       <section class="contact" id="contact">
+            <section class="contact" id="contact">
+                <h2>Get In Touch With Me</h2>
+            <div class="formcontainer">
+            <div class="contactform">
+                <form action="https://formspree.io/f/mnqkvkga" method="POST">
+                 <div class="formcontrol">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="sender-name" placeholder="Enter Your Name"
+                class="inputfield" required/>
+             </div>
+            <div class="formcontrol">
+                 <label for="email">Email</label>
+                <input type="email" id="email" name="sender-email" placeholder="Enter Your Email"
+                 class="inputfield" required/>
+            </div>
+            <div class="formcontrol">
+                <label for="message">Message</label>
+                <textarea id="message" cols="60" rows="10"placeholder="Enter Your Message"
+                name="message" class="inputfield" required></textarea>
+            </div>
+            <input type="submit" value="Click here to Submit" id="submitbtn" class="submitbtn"/>
+        </form>
+            </div>
+            </div>   <!--This div tag belongs to line 73-->
+            </section>
+                                    <!--Media icons-->
+         <div class="socialicons">
+            <a href="https://instagram.com/abishek_sr4?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+            <img src="insta.png" alt="Instagram" loading="lazy"class="icons"/></a>
+            <a href="https://www.facebook.com/abishek.babu.188?mibextid=ZbWKwL" target="_blank">
+             <img src="facebook.png" alt="Facebook" loading="lazy"class="icons"/></a>
+             <a href="https://www.linkedin.com/in/abishek-babu-b4aa95138" target="_blank">
+            <img src="linkedin.png" alt="Linkedin" loading="lazy"class="icons"/></a>
+           </div>
+                                <!--scroll to top-->
+            <i class="scrollup" id="scrollup">
+            <img src="uparrow.png" class="uparrow" alt="scrollup"/>
+            </i>
+                            <!--Footer Section-->
+            <footer>
+                <p class="copy">&copy; Copyright 2023</br>All the images used in this 
+            website belong to their respective owners.</br>I or this website does not claim any rights 
+            over them.</p>
+            </footer>
+                            <!--Linking JS file to HTML-->
+        <script src="app.js">
+                
+        </script>
+</body>
+</html>

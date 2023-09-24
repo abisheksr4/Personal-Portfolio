@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+/*Declaring the css variables to make our work easier*/
+:root{
+    --font-family: "Roboto",sans-serf;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #fcfcfc;                     /*1 rem is 16 px*/
+    --primary-color: #4756df;
+    --secondary-color: #ff7235;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+}
+                                /*NAVIGATION BAR*/
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+a:hover{
+    color: var(--secondary-color);
+}
+body{
+    font-family: var(--font-family);
+}
+nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1); /*Top,Right and left,Bottom*/
+}
+nav h1{
+        color: var(--primary-color);
+}
+nav a{
+        color: var(--primary-color);
+        transition: var(--transition);
+}
+nav a:hover{
+        color:var(--secondary-color);
+        border-bottom: 2px solid var(--secondary-color);
+}
+nav ul{
+        display: flex;
+        gap: 1.9rem;
+}
+nav ul li{
+            font-weight: var(--bold-font);
+}
+.burgermenu{
+             color: var(--primary-color);
+             font-size: 2rem;
+             border: 0;
+             background-color: transparent;
+             cursor: pointer;
+             display: none;
+}
+                            /*About and image section*/
+.hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 18rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        margin-top: 8rem;
+}
+.heroimg{
+         width: 30rem;
+         height: 30rem;
+         border-radius: 15rem;
+}
+.biomain{
+         width: 30rem;
+         padding: 2rem;
+         border-radius: 4px;
+         box-shadow: 0 3px 10px
+}
+.biotitle{
+         margin-bottom: var(--bottom-margin);
+}
+.biotext{
+        line-height: var(--line-height);
+        padding: 1rem 0;  /*Top and bottom,Right and left*/
+}
+.biomain:hover{
+    box-shadow: 0 2px 15px 2px var(--primary-color);
+}
+                                /*Skills Section*/
+.skills{
+    width: 70rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 4rem;
+}
+.imgcard{
+    height: 20rem;
+    width: 40rem;
+    border-radius: 3rem;
+    margin-top: 1rem;
+    
+}
+.imgcard:hover{
+    box-shadow: 0 2px 15px 2px var(--primary-color);
+}
+                             /*Project section*/  
+.projects{
+    background-color: var(--bg-color);
+    padding: 32px 0; /*Top and Bottom,Right and Left*/
+    margin-top: 2rem;
+}
+.projectpic{
+    width: 65%;
+    height: 60%;
+}
+.projectcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projectstitle{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.projectcontainer{
+    text-align: center;
+    padding: 1rem;
+}
+.projectcontainer p{
+    padding: 0.5rem;
+}
+.projecttitle {
+    margin-bottom: var(--bottom-margin);
+}
+.projectdetails {
+    margin-bottom: var(--bottom-margin);
+}
+.projectcard{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 20px;
+    margin: 10px;
+}
+.projectcard:hover{
+    box-shadow:0 2px 15px 2px var(--primary-color);
+}
+                            /*Contact Section*/
+.contact{
+    margin-top:2rem;
+}
+.contact h2{
+    text-align: center;
+    margin-bottom: var(--bottom-margin-2);
+}
+.formcontainer{
+    width: 40rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    margin-bottom: 1rem;
+}
+.formcontainer label{
+    line-height: 2.7rem;
+    font-weight: var(--bold-font);
+    color: black
+}
+.formcontainer textarea{
+    height:6rem;
+    font-size: 14px;
+}
+.formcontainer .inputfield{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.submitbtn{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: var(--bold-font);
+}
+.submitbtn:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+                                /*Media Section*/
+.socialicons{
+    margin-left: 43rem;
+    margin-top: 1rem;
+}
+.icons{
+    width: 2rem;
+    height: 2rem;
+    gap: 3px;
+}
+                            /*Up Arrow section*/
+.uparrow{
+    width: 3rem;
+    height: 3rem;
+}
+.scrollup{
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+                                /*Footer section*/
+.copy{
+    text-align: center;
+    background-color: var(--bg-color);
+    margin-bottom: 1rem;
+}
+                                /*Making this website as responsive*/
+@media(max-width:1400px){
+nav{
+    padding: 1.5rem 1rem;
+}
+nav ul{
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);   /*it will push it to the right and force it out of the viewport*/
+    transition: transform 0.5s ease-in;
+}
+nav ul li{
+    margin: 8px;
+}
+.burgermenu{
+    display: block;
+}
+nav ul.show {
+    transform: translateX(0);
+}
+.hero{
+    margin-top: -4rem;
+    flex-direction: column;
+    gap: 3rem;
+}
+.heroimg{
+    margin-top: 5rem;
+}
+.skills{
+    width: 40rem;
+}
+.projectcontainer{
+    flex-direction: column;
+}
+.formcontainer{
+    max-width: 23.75rem;
+}
+.socialicons{
+    margin-left: 28rem
+}
+.uparrow{
+    float: right;
+    margin-right: 1rem;
+}
+}
+@media(max-width:600px){
+.hero{
+    margin-left: 20rem;
+}
+.skills{
+    margin-left: 1rem;
+}
+.projects{
+    margin-left: 8rem;
+    width: 100%;
+}
+.contact h2{
+    margin-left: 9em;
+}
+.formcontainer{
+    margin-left: 9rem;
+}
+.copy{
+    text-align: center;
+    margin-left: 12rem;
+    width: 20rem;
+}
+nav{
+    width: 42rem;
+}
+.socialicons{
+    margin-left: 28rem;
+}
+}
+
